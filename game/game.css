@@ -2,7 +2,7 @@
     margin:0;
     padding: 0;
     text-align: center;
-    background-color: aqua;
+    background-color: rgb(58, 118, 113);
 }h1{
     background-color: #081b31;
     color: #fff;
@@ -34,6 +34,44 @@ img{
     gap: 3rem;
     margin-top:5rem
 }
+
+.score-board {
+    text-align: center; /* Centers the scoreboard on the page */
+    margin-top: 20px; /* Adds some space at the top of the scoreboard */
+}
+
+.score {
+    display: flex; /* Uses Flexbox to layout children */
+    justify-content: center; /* Centers the children horizontally in the flex container */
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 20px; /* Adds space between the "You" and "Comp" sections */
+}
+
+.label, #user-score, #comp-score {
+    margin: 5px; /* Adds a small margin around each paragraph for spacing */
+    font-size: 1.5rem; /* Sets a standard font size for the text */
+}
+.you{
+    font-size: 1.5rem;
+}
+.comp{
+    font-size: 1.5rem;
+}
+
+.label {
+    font-weight: bold; /* Makes the "You" and "Comp" labels bold */
+}
+
+#user-score, #comp-score {
+    min-width: 50px; /* Ensures a minimum width for score elements */
+    background-color: #f4f4f4; /* Light grey background for the scores */
+    padding: 10px; /* Pads the scores for better visibility */
+    border-radius: 5px; /* Rounds the corners of the score boxes */
+}
+
+
+
+/*
 .score-board{
    display: flex;
    justify-content: center;
@@ -48,8 +86,8 @@ img{
 }
 #user-score,
 #comp-score{
-    font-size: 4rem;   
-}
+    font-size: 3.5rem;   
+}*/
 .msg-container{
     margin-top: 5rem;
 }
